@@ -1,0 +1,125 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Online Video Downloader</title>
+    <link href="{{ url_for('static', filename = '/style.css') }}" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+  </head>
+  <body style="background: #F8A434">
+    <form>
+      <div class="header">
+         <p>Download Videos from</p>
+      </div>
+      <div class="description">
+        <h2>Facebook, Youtube, Instagram, Twitter</h2>
+      </div>
+      <div class="input">
+        <form >
+        
+        </form>
+
+        <form action="/download" method="post">
+                    <input type="text" class="button" id="link" placeholder="Enter video url here" name="url">
+                    <button type="down" class="button" id="down">Download</button>
+                   
+                </form>
+        </div>
+      </form>
+    
+    <p class="p">
+    Copyright @2021 <br><br><span>
+    Made with <i class="fa fa-heart" style="color:red;" ></i><a > by Vivek Bhagat</a>
+    
+    </p>
+</span>
+
+<style type="text/css">
+  
+body {
+  background: #F8A434;
+  font-family: 'Lato', sans-serif;
+  color: #FDFCFB;
+  text-align: center;
+}
+
+
+form {
+  width: 500px;
+  margin: 17% auto;
+}
+
+
+.header {
+
+  font-size: 35px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+
+.description {
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 1.3em;
+  margin: -2px 0 45px;
+}
+
+
+.input {
+  display: flex;
+  align-items: center;
+  margin-top: -50px;
+  margin-bottom: -200px
+}
+
+
+.button {
+  height: 44px;
+  border: none;
+}
+
+  
+#link {
+  width: 75%;
+  background: #FDFCFB;
+  font-family: inherit;
+  color: #737373;
+  letter-spacing: 1px;
+  text-indent: 5%;
+  border-radius: 5px 0 0 5px;
+}
+
+
+#down{
+  width: 25%;
+  height: 46px;
+  background: #E86C8D;
+  font-family: inherit;
+  font-weight: bold;
+  color: inherit;
+  letter-spacing: 1px;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  transition: background .3s ease-in-out;
+}
+  
+
+#down:hover {
+  background: #d45d7d;
+}
+  
+
+input:focus {
+  outline: none;
+  outline: 2px solid #E86C8D;
+  box-shadow: 0 0 2px #E86C8D;
+}
+.p {
+
+    margin: 10px 0;
+    font-family: sans-serif;
+}
+</style>
+  </body>
+</html>
