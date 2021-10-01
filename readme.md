@@ -7,3 +7,8 @@
     python app.py
 Visit http://localhost in your browser.
 
+## It is deployed on Heroku
+
+follow the link
+
+ https://online-video-downloader-flask.herokuapp.com/
